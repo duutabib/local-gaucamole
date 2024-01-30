@@ -1,5 +1,6 @@
 # plots
 *.png
+*.JPEG
 
 
 # folders
@@ -31,6 +32,7 @@ stringerLAB/
 *.nwb 
 *.bak
 *.npy
+*.tar
 
 
 

@@ -1,0 +1,39 @@
+# plots
+*.png
+
+
+# folders
+__pycache__
+.ipynb_checkpoints
+data/
+LOGS/
+venv/
+plots/misc_plots/
+msc/
+notebooks/.ipynb_checkpoints
+notebooks/glaciers
+.DS_Store
+.vscode/
+.empty/
+notebooks/robustSigs/ImageNet_data/
+notebooks/robustSigs/data_imagenet/
+notebooks/sample_webapp/
+remote_plots/
+src/temp/
+PSETs/
+stringerLAB/
+.idea
+
+
+
+# data files
+*.mat
+*.nwb 
+*.bak
+*.npy
+
+
+
+# Msc files
+*.log
+*.exrc

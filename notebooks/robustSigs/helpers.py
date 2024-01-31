@@ -131,24 +131,20 @@ def ssplit(x):
     spontaneous activity.
     (2, n, p)
     """
+    # get # of stim
     nr = x.shape[0]
+    snr = ceil(nr / 2)
 
-    nro = x.shape[0]
+    # get # neurons
     nco = x.shape[1]
 
-    newarr = np.empty((2, nro, nco))
-
-    snr = ceil(nr / 2)
+    # init empty for final results
+    newarr = np.empty((2, snr, nco))
 
     p0 = x[:snr, :]
     p1 = x[snr:nr, :]
 
-    nrp0 = p0.shape[0]
-    ncp0 = p0.shape[1]
-
-    nrp1 = p1.shape[0]
-    ncp1 = p1.shape[1]
-
+    # store data
     newarr[0, :, :] = p0
     newarr[1, :, :] = p1
 

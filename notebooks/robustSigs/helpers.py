@@ -207,7 +207,7 @@ def dupSignal(x, idx):
             y[0, n, :] = x[il, :].mean(axis=0)
             y[1, n, :] = x[i2, :].mean(axis=0)
 
-        # rm single responses
+        # rm image responses without repeats
     y = y[:, ~inan, :]
 
     return y

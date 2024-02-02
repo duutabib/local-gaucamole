@@ -18,7 +18,7 @@ def get_powerlaw(ss, trange):
         (-np.log(allrange)[:, np.newaxis], np.ones((ss.size, 1))), axis=1
     )
     ypred = np.exp((x * b).sum(axis=1))
-    alpha = b[0]  # fit
+    alpha = b[0]  # alpha value 
     b_ = b[1]  # intercept
     return alpha, ypred, b_
 
